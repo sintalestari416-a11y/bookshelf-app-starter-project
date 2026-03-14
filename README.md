@@ -1,38 +1,23 @@
-# Bookshelf App Starter Project
+# 📚 Bookshelf App - Personal Library Manager
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+Selamat datang di **Bookshelf App**! Proyek ini adalah aplikasi web sederhana untuk mengelola daftar buku bacaan secara digital. Proyek ini saya bangun untuk mendalami penggunaan **DOM Manipulation** dan **Web Storage (LocalStorage)** dalam ekosistem JavaScript murni.
 
-## Ketentuan Pengerjaan Tugas
+## 🌟 Fitur Utama
+* **Manajemen Buku Lengkap**: Menambahkan buku baru ke dalam koleksi dengan detail judul, penulis, dan tahun terbit.
+* **Dua Rak Penyimpanan**: Memisahkan buku ke dalam rak "Belum Selesai Dibaca" dan "Selesai Dibaca" untuk pelacakan yang lebih baik.
+* **Persistensi Data**: Menggunakan `localStorage` sehingga data buku tetap tersimpan aman meskipun halaman browser dimuat ulang.
+* **Fitur Pencarian**: Memudahkan pencarian buku tertentu di dalam koleksi berdasarkan judul.
+* **Interaksi Responsif**: Memindahkan buku antar rak atau menghapus buku dari koleksi dengan konfirmasi instan.
 
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
+## 🛠️ Teknologi yang Digunakan
+* **HTML5**: Menyusun struktur antarmuka aplikasi.
+* **CSS3**: Memberikan tampilan yang bersih dan responsif.
+* **JavaScript (Vanilla)**: Menangani seluruh logika aplikasi, mulai dari pengelolaan data hingga manipulasi elemen HTML.
 
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
+## 📂 Bedah Berkas
+* **`index.html`**: File utama yang berisi form input dan struktur rak buku.
+* **`main.js`**: Pusat logika aplikasi, termasuk fungsi untuk simpan, hapus, dan pindah rak.
+* **`style.css`**: Pengaturan tata letak dan desain visual aplikasi.
 
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
-
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
-
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
-
-Selamat mengerjakan dan sukses selalu!
+---
+*Proyek ini merupakan bagian dari perjalanan belajar **Sinta Lestari** di **DBS Foundation Coding Camp 2026**. Mari terus membaca dan menginspirasi!* 🚀
