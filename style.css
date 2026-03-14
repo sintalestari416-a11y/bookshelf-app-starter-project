@@ -1,0 +1,149 @@
+:root {
+  --latar-web: #fcfaf7;
+  --hijau-daun: #6b8e23; 
+  --cokelat-bumi: #8c7851;  
+  --teks-gelap: #2d3436;
+  --teks-abu: #636e72;
+  --putih-konten: #ffffff;
+  --garis: #e2e8f0;
+  --lengkung: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--latar-web);
+  color: var(--teks-gelap);
+  padding: 3rem 1.5rem;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 2.2rem; 
+  color: var(--hijau-daun);
+  letter-spacing: -1px;
+}
+
+main {
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+section {
+  background: var(--putih-konten);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: var(--lengkung);
+  border: 1px solid var(--garis);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cokelat-bumi);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--teks-gelap);
+}
+
+input[type="text"], 
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--garis);
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--hijau-daun);
+  background: #fff;
+}
+
+button#bookFormSubmit {
+  width: 100%;
+  background: var(--hijau-daun);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+[data-testid="bookItem"] {
+  padding: 1.5rem;
+  border: 1px solid var(--garis);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+[data-testid="bookItemTitle"] {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--teks-gelap);
+  margin-bottom: 4px;
+}
+
+[data-testid="bookItemAuthor"], 
+[data-testid="bookItemYear"] {
+  font-size: 0.85rem;
+  color: var(--teks-abu);
+}
+
+.action-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.2rem;
+}
+
+.action-group button {
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #f1f5f9;
+  border: 1px solid var(--garis);
+  color: var(--teks-abu);
+  cursor: pointer;
+}
+
+.action-group button:hover {
+  background: var(--hijau-daun);
+  color: white;
+  border-color: var(--hijau-daun);
+}
